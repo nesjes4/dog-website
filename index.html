@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All About Dogs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4CAF50;
+    }
+
+    .breed-list {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    .dog-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .dog-images img {
+      width: 250px;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .dog-images img:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Dog World!</h1>
+    <p>Your guide to man's best friend.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#breeds">Breeds</a>
+    <a href="#care">Care</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Dogs</h2>
+    <p>Dogs are loyal, loving, and intelligent animals. They have been companions to humans for thousands of years.</p>
+    <div class="dog-images">
+      <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Cute Dog 1">
+      <img src="https://images.unsplash.com/photo-1568572933382-74d440642117" alt="Cute Dog 2">
+      <img src="https://images.unsplash.com/photo-1583511655789-8be3035a8f62" alt="Cute Dog 3">
+    </div>
+  </section>
+
+  <section id="breeds">
+    <h2>Popular Dog Breeds</h2>
+    <ul class="breed-list">
+      <li>Labrador Retriever</li>
+      <li>German Shepherd</li>
+      <li>Golden Retriever</li>
+      <li>Bulldog</li>
+      <li>Beagle</li>
+    </ul>
+  </section>
+
+  <section id="care">
+    <h2>Dog Care Tips</h2>
+    <p>To keep your dog happy and healthy:</p>
+    <ul class="breed-list">
+      <li>Feed them a balanced diet</li>
+      <li>Give them daily exercise</li>
+      <li>Visit the vet regularly</li>
+      <li>Provide love and attention</li>
+      <li>Train them with patience</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dog World. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
